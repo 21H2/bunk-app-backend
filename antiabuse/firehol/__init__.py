@@ -52,7 +52,7 @@ cache_dir.mkdir(parents=True, exist_ok=True)
 
 def _blocklist_url(name: ListName) -> str:
     """Return the URL for a FireHOL list."""
-    return f"https://iplists.firehol.org/files/{name}"
+    return f"https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/{name}"
 
 
 def _parse_blocklist(
