@@ -79,10 +79,10 @@ class Smtp:
         if self._smtp is None:
             raise Exception("Connection couldn't be established")
 
-        _from_addr: str = from_addr or "no-reply@duolicious.app"
+        _from_addr: str = from_addr or "noreply@bunk-app.in"
 
         msg = MIMEMultipart("alternative")
-        msg["From"] = f"Duolicious <{_from_addr}>"
+        msg["From"] = f"Bunk <{_from_addr}>"
         msg["To"] = to_addr
         msg["Subject"] = subject
         msg.attach(MIMEText(body, "html"))
