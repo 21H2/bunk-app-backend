@@ -40,28 +40,28 @@ do_test () {
     email = REPLACE(
       email,
       '@example.com',
-      '@duolicious.app'),
+      '@bunk-app.in'),
     normalized_email = REPLACE(
       normalized_email,
       '@example.com',
-      '@duolicious.app')
+      '@bunk-app.in')
   "
 
-  assume_role 'will-remain-active1@duolicious.app'
+  assume_role 'will-remain-active1@bunk-app.in'
   jc POST /join-club -d '{ "name": "my-club-1" }'
   jc POST /join-club -d '{ "name": "my-club-2" }'
   jc POST /join-club -d '{ "name": "my-club-3" }'
   jc POST /join-club -d '{ "name": "my-club-4" }'
 
-  assume_role 'will-remain-active2@duolicious.app'
+  assume_role 'will-remain-active2@bunk-app.in'
   jc POST /join-club -d '{ "name": "my-club-1" }'
   jc POST /join-club -d '{ "name": "my-club-2" }'
 
-  assume_role 'will-be-deactivated@duolicious.app'
+  assume_role 'will-be-deactivated@bunk-app.in'
   jc POST /join-club -d '{ "name": "my-club-2" }'
   jc POST /join-club -d '{ "name": "my-club-3" }'
 
-  assume_role 'will-remain-active3@duolicious.app'
+  assume_role 'will-remain-active3@bunk-app.in'
   results=$(c GET '/search-clubs?q=my-club')
   expected=$(
     jq -r . <<< "[ \
