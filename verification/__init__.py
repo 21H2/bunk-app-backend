@@ -310,7 +310,7 @@ def process_response(
 
 def get_image_url(uuid: str) -> str:
     if not VERIFICATION_IMAGE_BASE_URL:
-        return f"https://user-images.duolicious.app/450-{uuid}.jpg"
+        return f"https://user-images.bunk-app.in/450-{uuid}.jpg"
 
     # Everything after this point is only intended for use in development.
     # This shouldn't be used in production.

@@ -49,7 +49,7 @@ services:
       DUO_SMTP_USER: unused-in-dev-env
       DUO_SMTP_PASS: unused-in-dev-env
 
-      DUO_REPORT_EMAIL: duolicious@example.com 20 a@example.com 0
+      DUO_REPORT_EMAIL: reports@bunk-app.in 20 a@example.com 0
 
       DUO_DB_HOST: postgres
       DUO_DB_PORT: 5432
@@ -119,7 +119,7 @@ services:
       DUO_SMTP_USER: unused-in-dev-env
       DUO_SMTP_PASS: unused-in-dev-env
 
-      DUO_REPORT_EMAIL: duolicious@example.com 20 a@example.com 0
+      DUO_REPORT_EMAIL: reports@bunk-app.in 20 a@example.com 0
 
       DUO_CRON_PROFILE_REPORTER_POLL_SECONDS: 1
 

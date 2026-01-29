@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   api:
-    image: us-east1-docker.pkg.dev/duolicious/api/{{branch}}:{{commit_sha}}
+    image: us-east1-docker.pkg.dev/bunk-app-cloud-484307/api/main:142925ffc92fcf1d9b96b39ee75d98f1ada4ffb5
     ports:
       - "5000:5000"
     env_file:
@@ -15,7 +15,7 @@ services:
       retries: 3
 
   chat:
-    image: us-east1-docker.pkg.dev/duolicious/chat/{{branch}}:{{commit_sha}}
+    image: us-east1-docker.pkg.dev/bunk-app-cloud-484307/chat/main:142925ffc92fcf1d9b96b39ee75d98f1ada4ffb5
     ports:
       - "5443:5443"
     env_file:
@@ -27,7 +27,7 @@ services:
       retries: 3
 
   cron:
-    image: us-east1-docker.pkg.dev/duolicious/cron/main:{{branch}}:{{commit_sha}}
+    image: us-east1-docker.pkg.dev/bunk-app-cloud-484307/cron/main:142925ffc92fcf1d9b96b39ee75d98f1ada4ffb5
     ports:
       - "8082:8080"
     env_file:

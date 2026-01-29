@@ -16,7 +16,7 @@ NON_BREAKING_SPACES = '\xa0' * MAX_NOTIFICATION_LENGTH
 AUDIO_MESSAGE_BODY = f"""
 Voice message
 {NON_BREAKING_SPACES}
-Upgrade to the latest version of Duolicious to hear this message
+Upgrade to the latest version of Bunk to hear this message
 """.strip()
 
 @dataclass(frozen=True)

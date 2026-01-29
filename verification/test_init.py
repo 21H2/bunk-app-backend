@@ -327,7 +327,7 @@ You have been given one or more image(s) by a user attempting to verify their id
                         {
                             "type": "image_url",
                             "image_url": {
-                                "url": 'https://user-images.duolicious.app/450-u1.jpg',
+                                "url": 'https://user-images.bunk-app.in/450-u1.jpg',
                                 "detail": "high"
                             }
                         },
@@ -420,7 +420,7 @@ You have been given one or more image(s) by a user attempting to verify their id
                         {
                             "type": "image_url",
                             "image_url": {
-                                "url": 'https://user-images.duolicious.app/450-u1.jpg',
+                                "url": 'https://user-images.bunk-app.in/450-u1.jpg',
                                 "detail": "high"
                             }
                         },
@@ -431,7 +431,7 @@ You have been given one or more image(s) by a user attempting to verify their id
                         {
                             "type": "image_url",
                             "image_url": {
-                                "url": f'https://user-images.duolicious.app/450-u2.jpg',
+                                "url": f'https://user-images.bunk-app.in/450-u2.jpg',
                                 "detail": "low"
                             }
                         },
@@ -442,7 +442,7 @@ You have been given one or more image(s) by a user attempting to verify their id
                         {
                             "type": "image_url",
                             "image_url": {
-                                "url": 'https://user-images.duolicious.app/450-u3.jpg',
+                                "url": 'https://user-images.bunk-app.in/450-u3.jpg',
                                 "detail": "low"
                             }
                         },

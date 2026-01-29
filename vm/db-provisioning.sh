@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+`#!/usr/bin/env bash
 
 #
 # VM provisioning script for Debian Bookworm in GCP
@@ -34,6 +34,18 @@ sudo apt install -y \
 
 sudo /sbin/modprobe zfs
 
+DATA_DISK1="/dev/disk/by-id/google-db-disk-1"
+DATA_DISK2="/dev/disk/by-id/google-db-disk-2"
+# Ensure neither disk is the root disk
+ROOT_DISK=$(lsblk -no PKNAME $(findmnt -n -o SOURCE /) | head -n1)
+if [[ $(readlink -f $DATA_DISK1) == "/dev/$ROOT_DISK" ]] || [[ $(readlink -f $DATA_DISK2) == "/dev/$ROOT_DISK" ]]; then
+  echo "ERROR: One of the data disks is the root disk ($ROOT_DISK). Aborting for safety."
+  exit 1
+fi
+if [ ! -b "$DATA_DISK1" ] || [ ! -b "$DATA_DISK2" ]; then
+  echo "ERROR: Data disks $DATA_DISK1 or $DATA_DISK2 not found!"
+  exit 1
+fi
 sudo zpool create \
   -o ashift=12 \
   -o autotrim=on \
@@ -45,11 +57,10 @@ sudo zpool create \
   -O relatime=on \
   -O canmount=on \
   -O mountpoint=/var/lib/pgsql/data \
-  -O autoexpand=on \
   dbpool \
   mirror \
-  /dev/disk/by-id/google-instance-1a \
-  /dev/disk/by-id/google-instance-1b
+  "$DATA_DISK1" \
+  "$DATA_DISK2"
 
 sudo chown -R postgres:postgres /var/lib/pgsql/data
 sudo chmod 700 /var/lib/pgsql/data
@@ -89,3 +100,4 @@ sudo systemctl restart postgresql
 # zfs list -t snapshot -o name -s creation -H | grep '^dbpool@' | head -n -3 | xargs -n1 zfs destroy
 # zfs snapshot dbpool@pr42
 # zfs destroy dbpool@pr42
+`

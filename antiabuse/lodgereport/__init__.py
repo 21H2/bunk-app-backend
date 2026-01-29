@@ -133,16 +133,16 @@ def report_template(
 
 
 <p><b>Ban REPORTING user for one month:</b></p>
-<a href="https://api.duolicious.app/admin/ban-link/{reporter_token}">
-         https://api.duolicious.app/admin/ban-link/{reporter_token}
+<a href="https://api.bunk-app.in/admin/ban-link/{reporter_token}">
+         https://api.bunk-app.in/admin/ban-link/{reporter_token}
 </a>
 
 <br/>
 <br/>
 
 <p><b>Ban ACCUSED user for one month:</b></p>
-<a href="https://api.duolicious.app/admin/ban-link/{accused_token}">
-         https://api.duolicious.app/admin/ban-link/{accused_token}
+<a href="https://api.bunk-app.in/admin/ban-link/{accused_token}">
+         https://api.bunk-app.in/admin/ban-link/{accused_token}
 </a>
 
 </body>

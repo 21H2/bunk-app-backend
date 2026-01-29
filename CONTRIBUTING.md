@@ -1,6 +1,6 @@
-# Contributing to Duolicious
+# Contributing to Bunk
 
-Thanks for your interest in improving Duolicious! This guide will help you get set up quickly and submit a great pull request.
+Thanks for your interest in improving Bunk! This guide will help you get set up quickly and submit a great pull request.
 
 ## Getting started (5 minutes)
 

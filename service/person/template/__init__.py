@@ -5,7 +5,7 @@ def otp_template(otp: str):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in to Duolicious</title>
+    <title>Sign in to Bunk</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;">
     <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -14,7 +14,7 @@ def otp_template(otp: str):
                 <table style="max-width: 600px; width: 100%;" cellspacing="0" cellpadding="0" border="0" align="center">
                     <tr>
                         <td bgcolor="#70f" align="center">
-                            <img src="https://email-assets.duolicious.app/header-logo.png" alt="Duolicious Logo" width="108" height="50" />
+                            <img src="https://email-assets.bunk-app.in/header-logo.png" alt="Bunk Logo" width="108" height="50" />
                         </td>
                     </tr>
                     <tr>

@@ -12,7 +12,7 @@ class TestEmailTemplate(unittest.TestCase):
         self.assertIn('new messages', e1)
         self.assertIn('a new message', e2)
         self.assertIn('a new message', e3)
-        self.assertIn('support@duolicious.app', e4)
+        self.assertIn('support@bunk-app.in', e4)
 
 if __name__ == '__main__':
     unittest.main()

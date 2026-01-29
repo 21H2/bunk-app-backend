@@ -37,7 +37,7 @@ sleep 3
 
 curl -X POST http://localhost:3000/config -H "Content-Type: application/json" -d '{
   "service": "ws://chat:5443",
-  "domain": "duolicious.app",
+  "domain": "bunk-app.in",
   "resource": "testresource",
   "username": "'$user1uuid'",
   "password": "'$user1token'"
@@ -54,8 +54,8 @@ echo A potentially offensive message is blocked
 curl -X POST http://localhost:3000/send -H "Content-Type: application/xml" -d "
 <message
     type='chat'
-    from='$user1uuid@duolicious.app'
-    to='$user2uuid@duolicious.app'
+    from='$user1uuid@bunk-app.in'
+    to='$user2uuid@bunk-app.in'
     id='id1'
     check_uniqueness='false'
     xmlns='jabber:client'>
@@ -83,8 +83,8 @@ echo Another potentially offensive message is blocked
 curl -X POST http://localhost:3000/send -H "Content-Type: application/xml" -d "
 <message
     type='chat'
-    from='$user1uuid@duolicious.app'
-    to='$user2uuid@duolicious.app'
+    from='$user1uuid@bunk-app.in'
+    to='$user2uuid@bunk-app.in'
     id='id1'
     check_uniqueness='false'
     xmlns='jabber:client'>
@@ -113,8 +113,8 @@ echo A benign message is allowed
 curl -X POST http://localhost:3000/send -H "Content-Type: application/xml" -d "
 <message
     type='chat'
-    from='$user1uuid@duolicious.app'
-    to='$user2uuid@duolicious.app'
+    from='$user1uuid@bunk-app.in'
+    to='$user2uuid@bunk-app.in'
     id='id1'
     check_uniqueness='false'
     xmlns='jabber:client'>
@@ -145,7 +145,7 @@ echo Poentially offensive messages are allowed during established conversations
 
 curl -X POST http://localhost:3000/config -H "Content-Type: application/json" -d '{
   "service": "ws://chat:5443",
-  "domain": "duolicious.app",
+  "domain": "bunk-app.in",
   "resource": "testresource",
   "username": "'$user2uuid'",
   "password": "'$user2token'"
@@ -156,8 +156,8 @@ echo 3
 curl -X POST http://localhost:3000/send -H "Content-Type: application/xml" -d "
 <message
     type='chat'
-    from='$user2uuid@duolicious.app'
-    to='$user1uuid@duolicious.app'
+    from='$user2uuid@bunk-app.in'
+    to='$user1uuid@bunk-app.in'
     id='id1'
     check_uniqueness='false'
     xmlns='jabber:client'>

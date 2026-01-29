@@ -266,10 +266,10 @@ def _send_otp(email: str, otp: str):
         return
 
     aws_smtp.send(
-        subject="Sign in to Duolicious",
+        subject="Sign in to Bunk",
         body=otp_template(otp),
         to_addr=email,
-        from_addr='noreply-otp@duolicious.app',
+        from_addr='noreply-otp@bunk-app.in',
     )
 
 def post_request_otp(req: t.PostRequestOtp):
@@ -1900,7 +1900,7 @@ def get_admin_ban_link(token: str):
         return err_invalid_token
 
     if rows:
-        link = f'https://api.duolicious.app/admin/ban/{token}'
+        link = f'https://api.bunk-app.in/admin/ban/{token}'
         return f'<a href="{link}">Click to confirm. Token: {token}</a>'
     else:
         return err_invalid_token
@@ -1924,7 +1924,7 @@ def get_admin_delete_photo_link(token: str):
         return 'Invalid token', 401
 
     if rows:
-        link = f'https://api.duolicious.app/admin/delete-photo/{token}'
+        link = f'https://api.bunk-app.in/admin/delete-photo/{token}'
         return f'<a href="{link}">Click to confirm. Token {token}</a>'
     else:
         return 'Invalid token', 401

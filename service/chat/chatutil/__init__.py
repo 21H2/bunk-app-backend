@@ -5,7 +5,7 @@ from typing import Literal
 import datetime
 
 
-LSERVER = 'duolicious.app'
+LSERVER = 'bunk-app.in'
 
 
 Q_IS_SKIPPED = """

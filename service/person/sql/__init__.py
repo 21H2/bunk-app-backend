@@ -2598,7 +2598,7 @@ SELECT json_build_object(
             SELECT
                 *,
 
-                'https://user-images.duolicious.app/original-' ||
+                'https://user-images.bunk-app.in/original-' ||
                     uuid ||
                     '.jpg' AS photo_url
 
@@ -2638,7 +2638,7 @@ SELECT json_build_object(
             SELECT
                 *,
 
-                'https://user-images.duolicious.app/450-' ||
+                'https://user-images.bunk-app.in/450-' ||
                     photo_uuid ||
                     '.jpg' AS photo_url
             FROM

@@ -108,14 +108,14 @@ SELECT
     count_answers,
     ARRAY(
         SELECT
-            'https://user-images.duolicious.app/original-' || uuid || '.jpg'
+            'https://user-images.bunk-app.in/original-' || uuid || '.jpg'
         FROM photo
         WHERE photo.person_id = p.id
         ORDER BY position
     ) AS photo_links,
     ARRAY(
         SELECT
-            uuid || ': https://api.duolicious.app/admin/delete-photo-link/' || photo_ban_with_id.token
+            uuid || ': https://api.bunk-app.in/admin/delete-photo-link/' || photo_ban_with_id.token
         FROM photo_ban_with_id
         WHERE photo_ban_with_id.person_id = p.id
         ORDER BY position
