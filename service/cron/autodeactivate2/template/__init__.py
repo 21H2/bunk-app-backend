@@ -13,7 +13,7 @@ def emailtemplate():
                 <td align="center">
                     <table width="600" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
-                            <td bgcolor="#70f" align="center">
+                            <td bgcolor="#FF6190" align="center">
                                 <img src="https://email-assets.bunk-app.in/header-logo.png" alt="Bunk Logo" width="108" height="50" />
                             </td>
                         </tr>
@@ -21,9 +21,9 @@ def emailtemplate():
                             <td bgcolor="#f1e5ff" height="20">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td bgcolor="#f1e5ff" align="center" style="color: #70f; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;">
-                                <p style="color: #70f; font-size: 24px; font-weight: 900;">Baby, come back!</p>
-                                <p style="color: #70f; font-size: 16px">
+                            <td bgcolor="#f1e5ff" align="center" style="color: #FF6190; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;">
+                                <p style="color: #FF6190; font-size: 24px; font-weight: 900;">Baby, come back!</p>
+                                <p style="color: #FF6190; font-size: 16px">
                                   Because we only show active members, your profile was hidden for now. That means you won't get any more intros or chats until you get on Bunk.
                                 </p>
                             </td>
@@ -32,9 +32,9 @@ def emailtemplate():
                           <td bgcolor="#f1e5ff" align="center" style="padding-bottom:25px">
                             <table border="0" cellspacing="0" cellpadding="0">
                               <tbody><tr>
-                                <td style="border-radius:50px; border:3px solid #70f; font-size: 20px; line-height:26px; color: #70f; text-align:center; min-width:auto!important">
-                                  <a href="https://get.bunk-app.in/" style="display:block;padding:11px 40px;text-decoration:none;color:#70f" target="_blank">
-                                    <span style="text-decoration:none;color:#70f">
+                                <td style="border-radius:50px; border:3px solid #FF6190; font-size: 20px; line-height:26px; color: #FF6190; text-align:center; min-width:auto!important">
+                                  <a href="https://get.bunk-app.in/" style="display:block;padding:11px 40px;text-decoration:none;color:#FF6190" target="_blank">
+                                    <span style="text-decoration:none;color:#FF6190">
                                       <strong>
                                         Get on Bunk
                                       </strong>
@@ -49,7 +49,7 @@ def emailtemplate():
                             <td bgcolor="#f1e5ff" height="20">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td bgcolor="#70f" height="50">&nbsp;</td>
+                            <td bgcolor="#FF6190" height="50">&nbsp;</td>
                         </tr>
                     </table>
                 </td>

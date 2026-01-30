@@ -13,7 +13,7 @@ def otp_template(otp: str):
             <td align="center">
                 <table style="max-width: 600px; width: 100%;" cellspacing="0" cellpadding="0" border="0" align="center">
                     <tr>
-                        <td bgcolor="#70f" align="center">
+                        <td bgcolor="#FF6190" align="center">
                             <img src="https://email-assets.bunk-app.in/header-logo.png" alt="Bunk Logo" width="108" height="50" />
                         </td>
                     </tr>
@@ -21,21 +21,21 @@ def otp_template(otp: str):
                         <td bgcolor="#f1e5ff" height="20">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td bgcolor="#f1e5ff" align="center" style="color: #70f;">
-                            <p style="color: #70f; font-size: 16px">Your one-time password is:</p>
+                        <td bgcolor="#f1e5ff" align="center" style="color: #FF6190;">
+                            <p style="color: #FF6190; font-size: 16px">Your one-time password is:</p>
                             <table cellspacing="0" cellpadding="0" border="0" align="center">
                                 <tr>
-                                    <td bgcolor="#70f" style="font-weight: 900; font-size: 32px; color: white; padding: 15px; border-radius: 15px;">{otp}</td>
+                                    <td bgcolor="#FF6190" style="font-weight: 900; font-size: 32px; color: white; padding: 15px; border-radius: 15px;">{otp}</td>
                                 </tr>
                             </table>
-                            <p style="color: #70f; font-size: 16px">If you didn’t request this, you can ignore this message.</p>
+                            <p style="color: #FF6190; font-size: 16px">If you didn’t request this, you can ignore this message.</p>
                         </td>
                     </tr>
                     <tr>
                         <td bgcolor="#f1e5ff" height="20">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td bgcolor="#70f" height="50">&nbsp;</td>
+                        <td bgcolor="#FF6190" height="50">&nbsp;</td>
                     </tr>
                 </table>
             </td>
